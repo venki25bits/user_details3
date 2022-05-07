@@ -40,7 +40,9 @@ func injectUser(ctrl Controller.Ctrl) http.HandlerFunc{
 		var ur model.User
 		ctx := r.Context()
 		err := json.NewDecoder(r.Body).Decode(&ur)
-
+		if err != nil {
+			return err
+		}
 		id, err := ctrl.IngestUser(ur, ctx)
 		if ctx.Err() != nil {
 			return
