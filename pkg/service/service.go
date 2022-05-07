@@ -22,3 +22,15 @@ func ready(ctrl *controller.Controller) http.HandlerFunc {
 		}
 	}
 }
+
+func getUserDetails(ctrl controller.Ctrl) http.HandlerFunc{
+	return func(w http.ResponseWriter, r *http.Request){
+		vars := mux.Vars(r)
+		userId := vars["id"]
+		ctx := r.context()
+		userDetails, err := ctrl.FindUserDetails(userId, ctx)
+		if ctx.Err() != nil{
+			return
+		}
+	}
+}
