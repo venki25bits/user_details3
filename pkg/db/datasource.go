@@ -1,9 +1,9 @@
 package db
 
 import (
-	"api-template/pkg/config"
-	"api-template/pkg/db/mongo"
-	"api-template/pkg/db/mssql"
+	"user-details/pkg/config"
+	"user-details/pkg/db/mongo"
+	"user-details/pkg/db/mssql"
 	_ "github.com/denisenkom/go-mssqldb" // needed for sql driver.
 
 	"github.com/rs/zerolog/log"

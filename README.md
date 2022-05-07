@@ -1,8 +1,8 @@
 The purpose of this template is to increase the speed at which applications are developed and stood up. As well as create a coding standard amongst our teams.
 
-# API-TEMPLATE
+# user-details
 
-API-TEMPLATE serves as a template api
+user-details serves as a template api
 
 ## Usage
 To find out how to use this API, please read below instructions:

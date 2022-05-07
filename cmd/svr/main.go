@@ -1,7 +1,7 @@
 package main
 
 import (
-	"api-template/pkg/server"
+	"user-details/pkg/server"
 	"time"
 
 	router "vendor.lib/tng/tng-lib/router/mux"

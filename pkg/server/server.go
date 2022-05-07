@@ -7,9 +7,9 @@ import (
 	"github.com/rs/cors"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
-	"api-template/pkg/config"
-	"api-template/pkg/controller"
-	"api-template/pkg/service"
+	"user-details/pkg/config"
+	"user-details/pkg/controller"
+	"user-details/pkg/service"
 	"net/http"
 )
 

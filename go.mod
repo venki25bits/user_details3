@@ -1,4 +1,4 @@
-module cm-int-api-template
+module cm-int-user-details
 
 go 1.15
 

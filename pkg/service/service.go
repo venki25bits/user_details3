@@ -1,7 +1,7 @@
 package service
 
 import (
-	"api-template/pkg/controller"
+	"user-details/pkg/controller"
 	"net/http"
 
 	router "vendor.lib/tng/tng-lib/router/mux"

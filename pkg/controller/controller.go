@@ -1,8 +1,8 @@
 package controller
 
 import (
-	"api-template/pkg/config"
-	"api-template/pkg/db"
+	"user-details/pkg/config"
+	"user-details/pkg/db"
 	"net/http"
 	"net/url"
 
