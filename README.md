@@ -2,7 +2,7 @@ The purpose of this template is to increase the speed at which applications are 
 
 # user-details
 
-user-details serves as a template api
+user-details serves as an api to perform operations with user details
 
 ## Usage
 To find out how to use this API, please read below instructions:
