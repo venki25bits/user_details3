@@ -1,0 +1,18 @@
+{
+    "sql": {
+        "url": "",
+        "username": "",
+        "password": "",
+        "options": {
+            "max-open-connections": 30,
+            "max-idle-connections": 30,
+            "max-lifetime-ms": 30000
+        }
+    },
+    "mongo": {
+        "cm": {
+            "url": "",
+            "database": ""
+        }
+    }
+}
