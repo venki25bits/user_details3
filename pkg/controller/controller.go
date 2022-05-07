@@ -75,3 +75,9 @@ func (c *Controller) FindUserDetails(userId string, ctx context.Context) ([]mode
 	
 	return user
 }
+
+func (c *Controller) IngestUser(userDetails model.User, ctx context.Context) (string, error){
+	id, err := c.datasource.Mongo.UpsertUser(userDetails,ctx)
+
+	return id, nil
+}
