@@ -34,3 +34,16 @@ func getUserDetails(ctrl controller.Ctrl) http.HandlerFunc{
 		}
 	}
 }
+
+func injectUser(ctrl Controller.Ctrl) http.HandlerFunc{
+	return func(w http.ResponseWriter, r *http.Request){
+		var ur model.User
+		ctx := r.Context()
+		err := json.NewDecoder(r.Body).Decode(&ur)
+
+		id, err := ctrl.IngestUser(ur, ctx)
+		if ctx.Err() != nil {
+			return
+		}
+	}
+}
